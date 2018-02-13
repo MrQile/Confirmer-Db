@@ -1,0 +1,9 @@
+<h1> The Index Page </h1>
+
+<% @base.each do |f| %>
+    <ul><li><%=f.name%></li>
+    <% f.DecoderArray.each do |n| %>
+        <li><%= n %></li>
+    <% end %>
+    </ul>
+<% end %>
