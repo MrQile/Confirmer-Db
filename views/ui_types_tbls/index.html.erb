@@ -1,0 +1,13 @@
+<h1>ALL UI_TYPES_TBLS </h1>
+
+<% @ui_types.each do |f| %>
+	<ul>
+		<li>UI_TYPE_ID:<%=f.UI_TYPE_ID%></li>
+		<li>UI_TYPE:<%=f.UI_TYPE%></li>
+		<%= link_to 'Show', f %>
+		<%= link_to 'Edit', edit_ui_types_tbl_path(f) %>
+		<%= link_to 'Delete', f , method: :delete %>
+	</ul>
+<% end %>
+
+<%= link_to 'New', new_ui_types_tbl_path %>

@@ -1,0 +1,13 @@
+<h1>ALL SUBSYSTEM_TBLS </h1>
+
+<% @subs.each do |f| %>
+	<ul>
+		<li>SUBSYSTEM_ID:<%=f.SUBSYSTEM_ID%></li>
+		<li>SUBSYSTEM_NAME:<%=f.SUBSYSTEM_NAME%></li>
+		<%= link_to 'Show', f %>
+		<%= link_to 'Edit', edit_subsystem_tbl_path(f) %>
+		<%= link_to 'Delete', f, method: :delete %>
+	</ul>
+<% end %>
+
+<%= link_to 'New', new_subsystem_tbl_path %>

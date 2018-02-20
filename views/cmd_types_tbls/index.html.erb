@@ -1,0 +1,14 @@
+<h1>ALL CMD_TYPES_TBLS </h1>
+
+<% @cmd_types.each do |f| %>
+	<ul>
+		<li>CMD_TYPE_ID:<%=f.CMD_TYPE_ID%></li>
+		<li>CMD_TYPE:<%=f.CMD_TYPE%></li>
+		<li>CMD_TYPES_TBL_CMD_TYPE:<%=f.CMD_TYPES_TBL_CMD_TYPE%></li>
+		<%= link_to 'Show', f %>
+		<%= link_to 'Edit', edit_cmd_types_tbl_path(f) %>
+		<%= link_to 'Delete', f , method: :delete %>
+	</ul>
+<% end %>
+
+<%= link_to 'New', new_cmd_types_tbl_path %>
